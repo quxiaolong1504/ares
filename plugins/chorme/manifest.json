@@ -1,0 +1,15 @@
+{
+  "name": "VC Sync",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "sms verification code sync",
+  "icons": {"128": "images/icon_128.png" },
+  "browser_action": {
+        "default_icon": {
+            "19": "images/icon_19.png",
+            "38": "images/icon_38.png"
+        },
+        "default_title": "验证码同步助手",
+        "default_popup": "popup.html"
+    }
+}
