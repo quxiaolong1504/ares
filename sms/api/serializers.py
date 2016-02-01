@@ -17,7 +17,6 @@ class MessageSerializer(serializers.ModelSerializer):
 
     # read only fields
     id = serializers.IntegerField(read_only=True)
-    status = serializers.CharField(read_only=True)
     c_time = serializers.DateTimeField(read_only=True)
     u_time = serializers.DateTimeField(read_only=True)
     user = serializers.CharField(source='user.username', read_only=True)
@@ -29,3 +28,6 @@ class MessageSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Message
+        fields = ('id', 'c_time', 'u_time', 'user', 'phone', 'msg', 'device')
+
+

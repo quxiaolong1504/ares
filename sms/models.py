@@ -12,4 +12,4 @@ class Message(models.Model):
     u_time = models.DateTimeField(auto_now=True)
     device = models.CharField(max_length=50)
     phone = models.CharField(max_length=20, default='')
-    status = models.SmallIntegerField(default=0)
+    is_del = models.BooleanField(default=False)
